@@ -1,0 +1,158 @@
+:root {
+    /* text */
+    --text: rgb(34, 22, 46);
+    --navHoverText: rgb(73, 45, 103);
+    --navText: 'Comfortaa';
+    --headerText: 'Righteous';
+    --bodyText: 'Comfortaa';
+
+    /* Backgrounds */
+    --navPane: rgb(237, 231, 246);
+    --navPaneBar: var(--text);
+    --navPaneDropDownIcon: rgb(16, 130, 118);
+    --navPaneDropDownMenu: rgb(240, 187, 199);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+
+/* Navigation Pane */
+
+.navPane {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    width: 12.5vw;
+    height: 95vh;
+    border-radius: 5px;
+    background: var(--navPane);
+    font-family: var(--navText);
+}
+
+
+.navPaneItems {
+    margin: 10px;
+    padding: 10px;
+}
+
+
+.navPane__bar {
+    width: 100%;
+    height: 20px;
+    background: var(--navPaneBar);
+    margin: 0;
+    padding: 0;
+}
+
+
+.topicsHeader {
+    font-size: 2.2rem;
+}
+
+.topics {
+    display: block;
+    padding-left: 30px;
+}
+
+.topicDropDownIcon {
+    font-size: 2.2rem;
+    text-align: center;
+    color: var(--navPaneDropDown);
+}
+
+
+a,
+a:link,
+a:visited,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: var(--navText);
+}
+
+
+a:hover {
+    color: var(--navHoverText);
+}
+
+
+/* Hero Header */
+
+.heroHeader {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: 15vw;
+    font-family: var(--navText);
+    font-size: 4rem;
+    font-weight: normal;
+    border-bottom: 2px solid var(--text);
+    border-radius: 10px;
+}
+
+
+/* Dropdown Menus */
+/* CSS */
+.CSS__dropDownBox {
+    position: relative;
+    display: inline-block;
+}
+
+
+.CSS__dropDownBox__menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 180px;
+    background: var(--navPaneDropDownMenu);
+}
+
+
+.CSS__dropDownBox:hover .CSS__dropDownBox__menu {
+    display: block;
+}
+
+/* JavaScrip */
+.JS__dropDownBox {
+    position: relative;
+    display: inline-block;
+}
+
+
+.JS__dropDownBox__menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 180px;
+    background: var(--navPaneDropDownMenu);
+}
+
+
+.JS__dropDownBox:hover .JS__dropDownBox__menu {
+    display: block;
+}
+
+/* Places They Take Me */
+.places__dropDownBox {
+    position: relative;
+    display: inline-block;
+}
+
+
+.places__dropDownBox__menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 180px;
+    background: var(--navPaneDropDownMenu);
+}
+
+
+.places__dropDownBox:hover .places__dropDownBox__menu {
+    display: block;
+}
