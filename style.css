@@ -7,10 +7,10 @@
     --bodyText: 'Comfortaa';
 
     /* Backgrounds */
-    --navPane: rgb(237, 231, 246);
+    --navPane: rgb(235, 205, 248);
     --navPaneBar: var(--text);
     --navPaneDropDownIcon: rgb(16, 130, 118);
-    --navPaneDropDownMenu: rgb(240, 187, 199);
+    --navPaneDropDownMenu: rgb(180, 243, 246);
 }
 
 html {
@@ -19,6 +19,9 @@ html {
 
 body {
     font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+    border: none;
 }
 
 
@@ -87,12 +90,19 @@ a:hover {
 .heroHeader {
     width: -moz-fit-content;
     width: fit-content;
-    margin-left: 15vw;
-    font-family: var(--navText);
-    font-size: 4rem;
-    font-weight: normal;
-    border-bottom: 2px solid var(--text);
+    margin: 0 0 0 15vw;
+    border-bottom: 2px solid #fff;
     border-radius: 10px;
+    font-family: var(--navText);
+    font-size: 5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.heroHeaderBox {
+    margin: 0;
+    padding: 50px;
+    background: url(/assets/alfons-morales-YLSwjSy7stw-unsplash.jpg);
 }
 
 
@@ -101,20 +111,24 @@ a:hover {
 .CSS__dropDownBox {
     position: relative;
     display: inline-block;
+    cursor: pointer;
 }
 
 
 .CSS__dropDownBox__menu {
-    display: none;
+    visibility: hidden;
     position: absolute;
     z-index: 1;
     width: 180px;
     background: var(--navPaneDropDownMenu);
+    opacity: 0;
+    transition: opacity 0.2s linear;
 }
 
 
 .CSS__dropDownBox:hover .CSS__dropDownBox__menu {
-    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 /* Dropdown Menus */
@@ -122,20 +136,24 @@ a:hover {
 .JS__dropDownBox {
     position: relative;
     display: inline-block;
+    cursor: pointer;
 }
 
 
 .JS__dropDownBox__menu {
-    display: none;
+    visibility: hidden;
     position: absolute;
     z-index: 1;
     width: 180px;
     background: var(--navPaneDropDownMenu);
+    opacity: 0;
+    transition: opacity 0.2s linear;
 }
 
 
 .JS__dropDownBox:hover .JS__dropDownBox__menu {
-    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 /* Dropdown Menus */
@@ -143,20 +161,24 @@ a:hover {
 .places__dropDownBox {
     position: relative;
     display: inline-block;
+    cursor: pointer;
 }
 
 
 .places__dropDownBox__menu {
-    display: none;
+    visibility: hidden;
     position: absolute;
     z-index: 1;
     width: 180px;
     background: var(--navPaneDropDownMenu);
+    opacity: 0;
+    transition: opacity 0.2s linear;
 }
 
 
 .places__dropDownBox:hover .places__dropDownBox__menu {
-    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 
