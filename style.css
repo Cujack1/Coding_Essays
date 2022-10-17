@@ -117,7 +117,8 @@ a:hover {
     display: block;
 }
 
-/* JavaScrip */
+/* Dropdown Menus */
+/* JavaScript */
 .JS__dropDownBox {
     position: relative;
     display: inline-block;
@@ -137,6 +138,7 @@ a:hover {
     display: block;
 }
 
+/* Dropdown Menus */
 /* Places They Take Me */
 .places__dropDownBox {
     position: relative;
@@ -155,4 +157,28 @@ a:hover {
 
 .places__dropDownBox:hover .places__dropDownBox__menu {
     display: block;
+}
+
+
+/* Hero Content */
+
+.heroContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.content {
+    border-top: 2px solid #000;
+    border-radius: 3px;
+    width: 50%;
+    height: 75vh;
+}
+
+.content1 {
+    border-right: 2px solid #000;
+}
+
+.content2 {
+    border-left: 2px solid #000;
 }
